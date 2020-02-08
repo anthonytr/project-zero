@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project zero</title>
-</head>
-<body>
-    <header>
-        <figure>
-            <img src="" alt="logo">
-        </figure>
-        <div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Project zero</title>
+    </head>
+    <body>
+
+        <i class="icon-menu burger-button" id="burger-menu"></i> 
+
+        <header>
+            <div>
+            <figure>
+                <img src="" alt="logo">
+            </figure>
             <nav>
                 <ol>
                     <li>
-                        <a href="">Name</a>
+                        <a href="">Acerca de</a>
                     </li>
                     <li>
-                        <a href="">Inicio</a>
+                        <a href="">Empleos</a>
+                    </li>
+                    <li>
+                        <a href="">Notificaciones</a>
                     </li>
                     <li>
                         <a href="">Registrarse</a>
@@ -28,8 +34,74 @@
                     </li>
                 </ol>
             </nav>
-        </div>
-    </header>
-    
-</body>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="container">
+                <h1>Bienvenido a la red de trabajo SUD</h1>
+                <figure>
+                    <img src="" alt="Carrusel">
+                </figure>
+            </div>   
+        </section>
+
+        <section id="categorias" class="category-list">
+            <div class="container">
+                <h2>Desarrollo profesional</h2>
+                <article class="category">
+                    <figure class="category-imageContainer">
+                        <img class="category_image" src="" width="500" height="300" alt="">
+                    </figure>
+                    <div class="category-detail">
+                        <h3 class="category-title">Empleos</h3>
+                        <p class="category-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo dignissimos voluptatibus tenetur officia ullam fuga. Odit ab sint numquam enim, eligendi exercitationem quisquam perferendis provident deleniti aut dicta sapiente necessitatibus!</p>
+                        <a class="category-url" href="">Ver más</a>   
+                    </div>            
+                </article>
+                <article class="category">
+                    <figure class="category-imageContainer">
+                        <img class="category_image" src="" width="500" height="300" alt="">
+                    </figure>
+                    <div class="category-detail">
+                        <h3 class="category-title">Marca Personal</h3>
+                        <p class="category-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo dignissimos voluptatibus tenetur officia ullam fuga. Odit ab sint numquam enim, eligendi exercitationem quisquam perferendis provident deleniti aut dicta sapiente necessitatibus!</p>
+                        <a class="category-url" href="">Ver más</a>   
+                    </div>            
+                </article>
+                <article class="category">
+                    <figure class="category-imageContainer">
+                        <img class="category_image" src="" width="500" height="300" alt="">
+                    </figure>
+                    <div class="category-detail">
+                        <h3 class="category-title">Desarrollo Profesional</h3>
+                        <p class="category-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo dignissimos voluptatibus tenetur officia ullam fuga. Odit ab sint numquam enim, eligendi exercitationem quisquam perferendis provident deleniti aut dicta sapiente necessitatibus!</p>
+                        <a class="category-url" href="">Ver más</a>   
+                    </div>            
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="container">
+                <form action="/suscripcion/" class="form-email">
+                    <h3>¿Queres saber más?</h3 >
+                    <input type="text" placeholder="Déjame tu email" value="" id="email">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div>
+                    <p>Nombre de la red<img src="" alt=""> </p>
+                </div>
+                <div>
+                    <p>Create By</p>
+                </div>
+            </div>       
+        </footer>
+
+    </body>
 </html>
