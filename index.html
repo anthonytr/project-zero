@@ -12,11 +12,13 @@
         <link rel="stylesheet" href="estilos.css">
     </head>
     <body>
+        <div>
+            <i class="icon-menu burger-button" id="burger-menu"></i> 
 
-        <i class="icon-menu burger-button" id="burger-menu"></i> 
-
+        </div>
+        
         <header>
-            <nav class="container">
+            <nav class="nav-wrapper">
                 <figure>
                     <a href="#" class="brand-logo left valign-wrapper">
                         <img class="responsive-img z-depth-2" src="imagenes/logo.png" alt="logo de la página">
@@ -37,33 +39,31 @@
                     </li>
                 </ul>
             </nav>
+        
         </header>
         <main class="container">
-            <section class="hero">
-                <div class="section">
+                <!-- <section>
                     <div class="row">
-                        <div class="col s12">
+                        <div class="col s12"> -->
                             <div class="carousel carousel-slider">
-                                <a class="carousel-item" href="#one!"><img src="imagenes/work.jpg">Empleos</a>
-                                <a class="carousel-item" href="#two!"><img src="imagenes/meet.jpg">Capacitación</a>
-                                <a class="carousel-item" href="#three!"><img src="imagenes/branding.jpg">Marca personal</a>
+                                <a class="carousel-item" href="#one!"><img src="imagenes/work.jpg"></a>
+                                <a class="carousel-item" href="#two!"><img src="imagenes/meet.jpg"></a>
+                                <a class="carousel-item" href="#three!"><img src="imagenes/branding.jpg"></a>
                             </div>   
-                        </div>
+                        <!-- </div>
                     </div>
-                </div>     
-            </section>
-    
+                </section> -->
             <section id="categorias" class="category-list">
                 <div>
                     <h2>Desarrollo profesional</h2>
-                    <article class="category">
+                    <section>
                         <figure class="category-imageContainer">
-                            <img class="category_image" src="" width="500" height="300" alt="">
+                            <img class="category_image" src="" width="auto" height="auto" alt="">
                         </figure>
-                        <div class="category-detail">
+                        <div class="row">
                             <h3 class="category-title">Empleos</h3>
 
-                            <article class="col s12 m6 14">
+                            <article class="col s12 m6 13">
                                 <div class="card">
                                     <div class="card-image waves-effect waves-block waves-light">
                                         <img class="activator" src="imagenes/administrator.jpg">
@@ -79,7 +79,7 @@
                                 </div>
                             </article>
 
-                            <article class="col s12 m6 14">
+                            <article class="col s12 m6 13">
                                 <div class="card">
                                     <div class="card-image waves-effect waves-block waves-light">
                                         <img class="activator" src="imagenes/dentist.jpg">
@@ -95,7 +95,7 @@
                                 </div>
                             </article>    
                             
-                            <article>
+                            <article class="col s12 m6 13">
                                 <div class="card">
                                     <div class="card-image waves-effect waves-block waves-light">
                                         <img class="activator" src="imagenes/designer.jpg">
@@ -111,7 +111,7 @@
                                 </div>
                             </article>
                             
-                            <article>
+                            <article class="col s12 m6 13">
                                 <div class="card">
                                     <div class="card-image waves-effect waves-block waves-light">
                                         <img class="activator" src="imagenes/photographer.jpg">
@@ -126,60 +126,68 @@
                                     </div>
                                 </div>
                             </article>
-                        
+        
                         </div>            
-                    </article>
-                    <article class="category">
+                    </section>
+
+                    <section>
                         <figure class="category-imageContainer">
                             <img class="category_image" src="" width="500" height="300" alt="">
                         </figure>
-                        <div class="category-detail">
+                        <div class="row">
                             <h3 class="category-title">Marca Personal</h3>
 
-                            <div class="card">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                  <img class="activator" src="imagenes/branding1.jpg">
+                            <article class="col s4 m4">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="imagenes/branding1.jpg">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                        <p><a href="#">This is a link</a></p>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                    </div>
                                 </div>
-                                <div class="card-content">
-                                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                                  <p><a href="#">This is a link</a></p>
-                                </div>
-                                <div class="card-reveal">
-                                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                                </div>
-                            </div>
+                            </article>
+                            
 
-                            <div class="card">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                  <img class="activator" src="imagenes/branding2.jpg">
+                            <article class="col s4 m4">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="imagenes/branding2.jpg">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                        <p><a href="#">This is a link</a></p>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                    </div>
                                 </div>
-                                <div class="card-content">
-                                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                                  <p><a href="#">This is a link</a></p>
+                            </article>
+                            
+                            <article class="col s4 m4">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="imagenes/branding3.jpg">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                        <p><a href="#">This is a link</a></p>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                    </div>
                                 </div>
-                                <div class="card-reveal">
-                                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                  <img class="activator" src="imagenes/branding3.jpg">
-                                </div>
-                                <div class="card-content">
-                                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                                  <p><a href="#">This is a link</a></p>
-                                </div>
-                                <div class="card-reveal">
-                                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                                </div>
-                            </div>
-
+                            </article>
+                        
                         </div>            
-                    </article>
+                    </section>
                     <article class="category">
                         <figure class="category-imageContainer">
                             <img class="category_image" src="" width="500" height="300" alt="">
@@ -188,7 +196,7 @@
                             <h3 class="category-title">Desarrollo Profesional</h3>
                             
                             <div class="row">
-                                <div class="col s12 m6">
+                                <article class="col s6 m6">
                                   <div class="card">
                                     <div class="card-image">
                                       <img src="imagenes/curriculum.jpg">
@@ -199,11 +207,9 @@
                                       <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
                                     </div>
                                   </div>
-                                </div>
-                            </div>
-                                
-                            <div class="row">
-                                <div class="col s12 m6">
+                                </article>
+                            
+                                <article class="col s6 m6">
                                   <div class="card">
                                     <div class="card-image">
                                       <img src="imagenes/interview.jpg">
@@ -214,7 +220,7 @@
                                       <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
                                     </div>
                                   </div>
-                                </div>
+                                </article>
                             </div>
                                         
                         </div>            
@@ -241,8 +247,8 @@
                   <p class="grey-text text-lighten-4">Reinventate, te ayudamos a encontrar empleo, mejorar tu marca personal <br> y a estar mejor preparado para las oportunidades en tu vida.</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
-                  <h5 class="white-text">Links</h5>
-                  <ul>
+                  <ul class="right">
+                    <h5 class="white-text">Links</h5>
                     <li><a class="grey-text text-lighten-3" href="#!">Empleos</a></li>
                     <li><a class="grey-text text-lighten-3" href="#!">Marca personal</a></li>
                     <li><a class="grey-text text-lighten-3" href="#!">Desarrollo profesional</a></li>
@@ -262,21 +268,20 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                let elems = document.querySelectorAll('.carousel');
-                let instances = M.Carousel.init(elems, {
+                var elems = document.querySelectorAll('.carousel');
+                var instances = M.Carousel.init(elems, {
                     indicators: true,
-                    dist: -80
-                });
-
-                setInterval(function(){
-                
+                    dist: -80,
+                    duration: 200,
+                    fullWidth: false
                 })
+
+                
+
             });
-            
-            //Or with jQuery
-            //$(document).ready(function(){
-            //$('.carousel').carousel();
-            //});
+
+            var instance = M.Carousel.getInstance(elem);
+            instance.next();
         </script>
     </body>
 </html>
