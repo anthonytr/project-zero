@@ -21,6 +21,12 @@ header nav {
     width: 70px;
 }
 
+.card-panel {
+    display: inline-block;
+    justify-content: center;
+}
+
 .page-footer {
     background-color: #26a69a;
+    /* align-items: flex-end; */
 }
