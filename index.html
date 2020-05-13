@@ -41,15 +41,38 @@
         </header>
         <main class="container">
                 <section>
-                    <div class="row">
-                        <div class="col s12">
-                            <div class="carousel carousel-slider">
-                                <a class="carousel-item" href="#one!"><img src="imagenes/work.jpg"></a>
-                                <a class="carousel-item" href="#two!"><img src="imagenes/meet.jpg"></a>
-                                <a class="carousel-item" href="#three!"><img src="imagenes/branding.jpg"></a>
+                    <div class="slider">
+                        <ul class="slides">
+                          <li>
+                            <img src="imagenes/meet.jpg">
+                            <div class="caption center-align">
+                              <h3>This is our big Tagline!</h3>
+                              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
                             </div>
-                        </div>
-                    </div>
+                          </li>
+                          <li>
+                            <img src="imagenes/work.jpg">
+                            <div class="caption left-align">
+                              <h3>Left Aligned Caption</h3>
+                              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="imagenes/branding.jpg">
+                            <div class="caption right-align">
+                              <h3>Right Aligned Caption</h3>
+                              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="imagenes/curriculum.jpg">
+                            <div class="caption center-align">
+                              <h3>This is our big Tagline!</h3>
+                              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
                 </section>
             <section id="categorias" class="category-list">
                 <div>
@@ -262,21 +285,19 @@
             </div>
         </footer>
 
-        <!-- Compiled and minified JavaScript -->
+        <!-- Javascript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                var elems = document.querySelectorAll('.carousel');
-                var instances = M.Carousel.init(elems, {
+                var elems = document.querySelectorAll('.slider');
+                var instances = M.Slider.init(elems, {
                     indicators: true,
                     dist: -80,
-                    duration: 200,
-                    fullWidth: false
+                    duration: 300,
+                    interval: 3000
                 })
             });
-
-            // var instance = M.Carousel.getInstance(elem);
-            // instance.next();
         </script>
+        <!-- /Javascript -->
     </body>
 </html>
